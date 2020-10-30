@@ -34,10 +34,7 @@
 
 
 
-    // online  : github
-Om ni ser VIM text editor kommer ni ta exit från detta med : 
-    ctrl + c :   :qa!
-
+  
 
 
 
@@ -67,4 +64,62 @@ git push origin dev
 
 
 
+  // online  : github
+Om ni ser VIM text editor kommer ni ta exit från detta med : 
+    ctrl + c :   :qa!
 
+Spara allt och push till master. 
+
+// Main main 
+   git branch -M main  
+      // production branch/huvud branch
+
+  //basic linux command
+
+------------------
+
+
+// git conflit 
+
+När händer git conflikt ? när flera personner jobbar på samma fil/mapp/projekt
+ Sandra och Sussana index.html 
+
+  Sandra har skrivit header taggen  
+  Susassa har skrivit footer taggen 
+         jobbar på Dev branch. 
+  Sandra : git add index.html och git commit -m "  " 
+         
+         git push origin Dev
+
+  Susanna: git add index.html och git commit -m "  "
+
+          git push origin Dev
+
+
+Hur löser vi detta ? 
+
+    conflit : git pull origin dev
+
+
+    accept current changes-- accept both changes -- deny changes
+     
+    //commit 
+    // git push origin Dev
+
+ 
+    git remote -v 
+
+// din repo addressen 
+
+// ta bort origin 
+git remote remove origin 
+
+// add remote 
+ git remote add origin https://github.com/Rakibmedieinstitutet/gittest3.git
+
+
+//git pull origin master  --allow-unrelated-histories 
+   //refuse to merge unrelated files 
+
+
+ 
